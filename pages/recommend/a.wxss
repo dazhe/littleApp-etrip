@@ -1,0 +1,131 @@
+.topics-main {
+  height: 100%;
+}
+.top-bar {
+  height: 36px;
+  background: #444;
+  width:100%;
+  position: fixed;
+  top:0;
+  z-index:1;
+}
+
+
+.top-bar-item {
+  display:inline-block;
+  width: 25%;
+  color: #80bd01;
+  text-align: center;
+  line-height: 36px;
+  font-size: 14px;
+}
+
+.top-bar-item-Selected {
+  background: #80bd01;
+  color: white;
+}
+
+.posts-list {
+  margin-top: 36px;
+}
+.posts-item {
+  position: relative;
+  padding: 10px 0 10px 10px;
+  font-size: 14px;
+  padding-right: 10px;
+  background: #fff;
+  border-bottom: 1px solid #80bd01;
+}
+.author {
+  overflow: hidden;
+  padding-bottom: 5px;
+}
+.author-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  float: left;
+}
+.author-name {
+  color: #666;
+  float: left;
+  line-height:30px;
+  margin-left:5px;
+  font-size: 12px;
+}
+.posts-tag {
+  background: #fff;
+  border: 1px #80bd01 solid;
+  padding: 2px 4px;
+  border-radius: 3px;
+  color: #80bd01;
+  font-size: 12px;
+  float: left;
+  margin:6px 0px 8px 5px;
+}
+.hot {
+  border: 1px #e25242 solid;
+  color: #e25242;
+}
+.posts-last-reply {
+  float: right;
+  line-height:30px;
+  color: #666;
+  font-size: 12px;
+}
+.bar-info {
+  overflow: hidden;
+  height:14px;
+}
+.bar-info-item {
+  float: right;
+  line-height:14px;
+  margin-left: 5px;
+}
+.bar-info-item-icon {
+  width: 12px;
+  height: 12px;
+  vertical-align:middle;
+  margin-right: 2px;
+}
+.bar-info-item-number {
+  display:inline-block;
+  color: #999;
+  font-size: 12px;
+  line-height:14px;
+  vertical-align:middle;
+}
+.posts-title {
+  color: #2c3e50;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+
+
+
+.listitem-navigator{
+  display: flex; 
+  align-items: flex-start; 
+  flex-direction: row; 
+  justify-content: flex-start; 
+  padding: 37.5rpx; 
+  border-bottom: 1px solid rgb(237, 237, 237);
+  border-bottom-color: rgba(237,237,237,1); 
+}
+.wx-image_tBcdCT2{width: 80px; height: 80px; }
+.wx-view_cPj0ok2{margin-left: 10px; flex: 1 1 0%; align-self: stretch; display: flex; flex-direction: column; justify-content: space-between; }
+.c-block {
+        display: block;
+}
+.c-ellipse{
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow:hidden;
+}
+.wx-text_TvHPc92{font-size: 16px; -webkit-line-clamp: 2; }
+.wx-text_LS2Jup2{font-size: 13px; color: #a1a1a1; }

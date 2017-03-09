@@ -1,0 +1,31 @@
+<!--posts.wxml-->
+<view class="topics-main">
+  <view class="top-bar">
+    <block wx:for="{{topBarItems}}">
+        <view class="top-bar-item {{item.selected ? 'top-bar-item-Selected': '' }}" catchtap="onTapTag" id="{{item.id}}">{{item.name}}</view>
+    </block>
+    <!--<view class="top-bar-item" id="all" catchtap="onTapTag">全部</view>
+    <view class="top-bar-item" id="good" catchtap="onTapTag">精华</view>
+    <view class="top-bar-item" id="share" catchtap="onTapTag">分享</view>
+    <view class="top-bar-item" id="ask" catchtap="onTapTag">问答</view>
+    <view class="top-bar-item" id="job" catchtap="onTapTag">招聘</view>-->
+  </view>
+  <scroll-view class="posts-list" style="height:100%" scroll-y="true" bindscrolltolower="lower">
+    <block wx:for="{{postsList}}">
+
+
+<navigator class="listitem-navigator"  hover-class="navigator-hover">
+            <image class="wx-image_tBcdCT2"  mode="aspectFill" src="{{item.img}}" style="background-size: cover; background-position: center center; background-repeat: no-repeat;"/>
+            <view class="wx-view_cPj0ok2" >
+                <text class="c-block c-ellipse wx-text_TvHPc92" >{{item.title}}</text>
+                <text class="c-block c-ellipse wx-text_LS2Jup2" >旅行时间：{{item.travelTime}}</text>
+                <text class="c-block c-ellipse wx-text_LS2Jup2" >价格：{{item.price}}￥</text>
+            </view>
+</navigator>
+    </block>
+  </scroll-view>
+
+  <loading hidden="{{hidden}}">
+    加载中...
+  </loading>
+</view>

@@ -1,0 +1,25 @@
+.section{
+    margin-bottom: 3px;
+}
+.section__title{
+    margin-top:5px;
+    margin-bottom: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-family:  'Microsoft YaHei'; 
+    font-weight:  400; 
+    font-size:  16px;
+}
+.buttonstyle{
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+}
+.con-button{
+  color: black;
+  background-color: #09BB07;
+  margin-bottom: 10px;
+}
+.hoverbutton{
+  background-color: lightgray;
+}

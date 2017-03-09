@@ -1,0 +1,51 @@
+<view class="page">
+  <view class="section">
+      <view class="section__title text-margin-top">出发城市(必填)</view>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="picker-text">
+          {{array[index]}}
+        </view>
+      </picker>
+    </view>
+    <view class="section">
+       <view class="section__title"> 返回城市(必填)</view>
+      <picker bindchange="bindPickerChange1" value="{{index1}}" range="{{array1}}">
+        <view class="picker-text">
+         {{array1[index1]}}
+        </view>
+      </picker>
+    </view>
+    <view class="section">
+      <view class="section__title"> 游玩天数(必填)</view>
+      <picker bindchange="bindPickerChange2" value="{{indexDays}}" range="{{arrayDays}}">
+        <view class="picker-text">
+          {{arrayDays[indexDays]}}
+        </view>
+      </picker>
+    </view>
+    <view class="section">
+      <view class="section__title"> 出发日期范围(必填)</view>
+      <picker mode="date" value="{{date}}" start="2017-05-01" end="2020-09-01" bindchange="bindDateChange" >
+        <view class="picker-text">
+           {{date}}
+        </view>
+      </picker>
+      <picker mode="date" value="{{date1}}" start="2017-05-01" end="2020-09-01" bindchange="bindDateChange1">
+        <view class="picker-text">
+          {{date1}}
+        </view>
+      </picker>
+    </view>
+    <view class="section">
+      <checkbox-group bindchange="checkboxChange">
+      <view class="section__title">旅行主题</view>
+        <label class="items" wx:for="{{items}}">
+          <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+        </label>
+      </checkbox-group>
+    </view>
+    <view class="buttonstyle">
+            <button form-type="reset" class="con-button" hover-class="hoverbutton" bindtap="detailClick" type="primary" size="mini">详细设置</button>
+            <button form-type="submit" class="con-button" hover-class="hoverbutton" bindtap="" type="primary" size="mini">直接搜索</button>
+        </view>
+</view>

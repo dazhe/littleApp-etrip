@@ -1,0 +1,45 @@
+<view class="page">
+ <view class="section">
+      <view class="section__title">想去的城市(选填)</view>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="section__title">
+           {{array[index]}}
+        </view>
+      </picker>
+</view>
+<view class="section">
+      <view class="section__title">想去的城市(选填)</view>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="section__title">
+         {{array[index]}}
+        </view>
+      </picker>
+</view>
+<view class="section">
+      <view class="section__title">想去的目的地城市(选填)</view>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="section__title">
+         {{array[index]}}
+        </view>
+      </picker>
+</view>
+<view>
+            <button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="primary"> 搜索 </button>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</view>
